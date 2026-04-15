@@ -3127,11 +3127,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RpgApi\\RpgApi.csproj",
+      "projectUniqueName": "D:\\SILVX\\Aula09_DS\\RpgApi.csproj",
       "projectName": "RpgApi",
-      "projectPath": "D:\\RpgApi\\RpgApi.csproj",
+      "projectPath": "D:\\SILVX\\Aula09_DS\\RpgApi.csproj",
       "packagesPath": "D:\\NugetPackages",
-      "outputPath": "D:\\RpgApi\\obj\\",
+      "outputPath": "D:\\SILVX\\Aula09_DS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
