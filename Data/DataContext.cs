@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Aula09_DS.Models;
 using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Net.Http.Headers;
@@ -18,10 +19,12 @@ namespace RpgApi.Data
         }
 
         public DbSet<Personagem> TB_PERSONAGENS { get; set; }
+        public DbSet<Arma> TB_ARMAS { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Personagem>().ToTable("TB_PERSONAGENS");
+            modelBuilder.Entity<Arma>().ToTable("TB_ARMAS");
 
             modelBuilder.Entity<Personagem>().HasData(
                 new Personagem() { Id = 1, Nome = "Frodo", PontosVida = 100, Forca = 17, Defesa = 23, Inteligencia = 33, Classe = ClasseEnum.Cavaleiro },
@@ -32,6 +35,33 @@ namespace RpgApi.Data
                 new Personagem() { Id = 6, Nome = "Celeborn", PontosVida = 100, Forca = 21, Defesa = 13, Inteligencia = 34, Classe = ClasseEnum.Clerigo },
                 new Personagem() { Id = 7, Nome = "Radagast", PontosVida = 100, Forca = 25, Defesa = 11, Inteligencia = 35, Classe = ClasseEnum.Mago }
             );
+
+            modelBuilder.Entity<Arma>().HasData(
+             new Arma() { id = 1, Nome = "Arco e Flecha", Dano = 35},
+             new Arma() { id = 2, Nome = "Espada", Dano = 33},
+             new Arma() { id = 3, Nome = "Machado", Dano = 31},
+             new Arma() { id = 4, Nome = "Punho", Dano = 30},
+             new Arma() { id = 5, Nome = "Chicote", Dano = 34},
+             new Arma() { id = 6, Nome = "Foice", Dano = 33},
+             new Arma() { id = 7, Nome = "Cajado", Dano = 32}
+           );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
 
         protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
