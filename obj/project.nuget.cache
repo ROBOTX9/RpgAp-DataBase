@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uBna1ncTp6k=",
+  "dgSpecHash": "0/yT5Au2uWE=",
   "success": true,
-  "projectFilePath": "D:\\SILVX\\Aula09_DS\\RpgApi.csproj",
+  "projectFilePath": "D:\\SILVX\\data base\\RpgApi.csproj",
   "expectedPackageFiles": [
     "D:\\NugetPackages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "D:\\NugetPackages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

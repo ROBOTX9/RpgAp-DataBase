@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SILVX\\Aula09_DS\\RpgApi.csproj": {}
+    "D:\\SILVX\\data base\\RpgApi.csproj": {}
   },
   "projects": {
-    "D:\\SILVX\\Aula09_DS\\RpgApi.csproj": {
+    "D:\\SILVX\\data base\\RpgApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SILVX\\Aula09_DS\\RpgApi.csproj",
+        "projectUniqueName": "D:\\SILVX\\data base\\RpgApi.csproj",
         "projectName": "RpgApi",
-        "projectPath": "D:\\SILVX\\Aula09_DS\\RpgApi.csproj",
+        "projectPath": "D:\\SILVX\\data base\\RpgApi.csproj",
         "packagesPath": "D:\\NugetPackages",
-        "outputPath": "D:\\SILVX\\Aula09_DS\\obj\\",
+        "outputPath": "D:\\SILVX\\data base\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
