@@ -2,11 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Aula09_DS.Models;
 using database.Model;
 using database.Utils;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RpgApi.Data;
+using RpgApi.Models;
 
 namespace RpgApi.Controllers
 {
@@ -77,16 +79,10 @@ namespace RpgApi.Controllers
             {
                 return BadRequest(ex.Message);
             }
+
         }
-
-
-
-
-
-
-
-
-
+        
 
     }
+
 }

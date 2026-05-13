@@ -13,7 +13,7 @@ using RpgApi.Models;
 namespace Aula09_DS.Controllers
 {
     [Route("[controller]")]
-    public class PersonagensController : Controller
+    public class PersonagensController : ControllerBase
     {
         private readonly DataContext _context;
 
@@ -27,7 +27,11 @@ namespace Aula09_DS.Controllers
         {
             try
             {
-                Personagem p = await _context.TB_PERSONAGENS.FirstOrDefaultAsync(pBusca => pBusca.Id == id);
+                Personagem p = await _context.TB_PERSONAGENS
+                    .Include(ar => ar.Arma)
+                    .Include(ph => ph.PersonagemHabilidades)
+                        .ThenInclude(h => h.Habilidade)
+                    .FirstOrDefaultAsync(pBusca => pBusca.Id == id);    
 
 
                 return Ok(p);
